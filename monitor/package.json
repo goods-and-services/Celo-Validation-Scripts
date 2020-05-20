@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tsc && node build/index.js"
+    "run": "node -r esm src/main.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,9 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@celo/contractkit": "^0.4.1"
+    "@celo/contractkit": "^0.4.1",
+    "aws-sdk": "^2.680.0",
+    "bignumber.js": "^9.0.0",
+    "esm": "^3.2.25"
   }
 }
